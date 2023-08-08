@@ -1,0 +1,75 @@
+.flexbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0px -10px;
+}
+
+.item {
+  background: rgb(7, 36, 225);
+    width: 350px;
+    height: 350px;
+    margin: 15px;
+}
+
+/* .flex-container {
+  display: flex;  
+    flex-flow: row wrap ;
+    justify-content: center;
+   
+} */
+
+.content {
+  color: #242424;
+  background-color: #ff9500;
+  font-weight: 600;
+  text-align: center;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 10px;
+}
+/* header{ ไม่เอาแล้วอันนี้น่ะ
+  background-color: blue;
+  padding: 20px;
+  text-align: center;
+}
+footer{ อันนี้ก็ไม่เอาแล้วเหมือนกัน
+  background-color: blue;
+  padding: 20px;
+  text-align: center;
+} */
+.header-box, .footer-box {
+  background-color: blue;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 16px;
+}
+@media (min-width: 576px) {
+  .box {
+    flex: 0 1 calc(100% - 10px); /* 1 คอลัมน์ในแต่ละแถว */
+  }
+}
+@media (min-width: 768px) {
+  .box {
+    flex: 0 1 calc(50% - 10px); /* 3 คอลัมน์ในแต่ละแถว (เหมือนเดิม) */
+  }
+}
+@media (min-width: 992px) {
+  .box {
+    flex: 0 1 calc(33.33% - 10px); /*  3 คอลัมน์ในแต่ละแถว */
+  }
+}
+@media (min-width: 1200px) {
+  .box {
+    flex: 0 1 calc(33.33% - 10px); /* 3 คอลัมน์ในแต่ละแถว */
+  }
+}
+@media (min-width: 1400px) {
+  .box {
+    flex: 0 1 calc(33.33% - 10px); /* 3 คอลัมน์ในแต่ละแถว */
+  }
+}
