@@ -1,0 +1,57 @@
+/* เพิ่มสไตล์ที่เกี่ยวข้องกับรูปแบบสไลด์ */
+.carousel {
+    width: 50%; /* ปรับขนาดของ Carousel */
+    margin: 0 auto;
+}
+.carousel-item img {
+    width: 100%; /* ปรับขนาดของรูปภาพสินค้า */
+    height: auto;
+}
+.header-box{
+    background-color: #4c5372;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.submitt{
+    text-align: right;
+}
+body{
+    background-color: #fffdf6;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+} 
+.btn {
+    background-color: #e2d4e0;
+    color: #000;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+  
+.btn.btn-sm {
+    padding: 3px 8px;
+}
+input[type="submit"]{
+    background-color: #325871; 
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.input[type="reset"]{
+    background-color: #fffdf6; 
+    color: #000;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.vali-da {
+    border: 5px solid #9ba79c; 
+    padding: 20px; 
+    margin-top: 20px; 
+    border-radius: 10px;
+}

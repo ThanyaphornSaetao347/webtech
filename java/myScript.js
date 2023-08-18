@@ -23,8 +23,19 @@ function likeFunction(){
     counter++;
     document.getElementById("result").innerText = counter;
     document.getElementById("result").style.fontSize=10+counter+"px";
-    document.getElementById("myIcon").
+    
 }
 function loveFunction(){
-
+    var counter = parseInt(document.getElementById("result").innerText);
+    counter++;
+    document.getElementById("result").innerText = counter;
+    document.getElementById("result").style.fontSize=10+counter+"px";
+    
+}
+function sadFuncfion(){
+    var counter = parseInt(document.getElementById("result").innerText);
+    counter++;
+    document.getElementById("result").innerText = counter;
+    document.getElementById("result").style.fontSize=10+counter+"px";
+    
 }

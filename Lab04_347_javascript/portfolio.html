@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="port.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.3/chart.min.js" integrity="sha512-fMPPLjF/Xr7Ga0679WgtqoSyfUoQgdt8IIxJymStR5zV3Fyb6B3u/8DcaZ6R6sXexk5Z64bCgo2TYyn760EdcQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <style>
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .content {
+      display: flex;
+      align-items: center;
+    }
+    .image {
+      margin-right: 60px;
+    }
+    .article-content {
+      display: flex;
+      flex-direction: column;
+    }
+    .article-content article {
+      margin-top: 55px;
+    }
+  </style>
+
+</head>
+<body>
+  <header class="header-box">
+    <h2> P o r t f o l i o </h2>
+    
+  </header>
+  <div class="content">
+    <aside class="image">
+      <img src="/Lab04_347_javacript/img/F0F17385-543F-4E76-888D-4EFE92F33CF2.JPG" width="350px"  alt="">
+    </aside>
+    <div class="article-content">
+      <article>
+        <p style="color: #fffdf6;">Hi, this is me!</p>
+        <p style="color: #fffdf6;">Thanyaphorn Saetao student code 6504101347</p>
+        <p style="color: #fffdf6;">I am not fluent in any particular language. But it's enough to do it in many languages.</p>
+        <p style="color: #fffdf6;">Even though I'm not good enough in the programmer's language but I try to do it.</p>
+        <p style="color: #fffdf6;">It's better than doing nothing but waiting to copy your friends. I'm not saying that I don't copy my friends at all.</p>
+        <p style="color: #fffdf6;">There are some, but in the end, you have to take your friend's code to adjust it until it's not like your friend's anyway.</p>
+      </article>
+      <article>
+        <canvas id="myChart" width="600" height="300"></canvas>
+      </article>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    const labels = ["javascrit", "css", "html", "python", "c++"];
+    const data = {
+      labels: labels,
+      datasets: [{
+        label: 'Aptitude',
+        data: [40, 45, 50, 50,41],
+        backgroundColor: [
+          'rgba(255, 99, 132, 0.2)',
+          'rgba(255, 159, 64, 0.2)',
+          'rgba(255, 205, 86, 0.2)',
+          'rgba(75, 192, 192, 0.2)',
+          'rgba(54, 162, 235, 0.2)'
+          
+        ],
+        borderColor: [
+          'rgb(255, 99, 132)',
+          'rgb(255, 159, 64)',
+          'rgb(255, 205, 86)',
+          'rgb(75, 192, 192)',
+          'rgb(54, 162, 235)'
+          
+        ],
+        borderWidth: 1
+      }]
+    };
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+      type: 'bar',
+      data: data,
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            max: 100,
+          }
+        },
+        plugins: {
+          legend: {
+            labels: {
+              color: '#fffdf6' // กำหนดสีของตัวอักษรในตำแหน่ง label ทั้งหมดในกราฟ
+            }
+          }
+        }
+      }
+    });
+  </script>
+</div>
+  <footer class="footer-box">
+    <a href="https://web.facebook.com/thanyaporn.saetao" target="_blank">
+      <i class="fab fa-facebook-square color-icon larger-icon"></i>
+    </a>
+    <a href="https://www.instagram.com/ky_po.07/" target="_blank">
+      <i class="fab fa-instagram-square color-icon larger-icon"></i>
+    </a>
+    <a href="mailto:tunyaporn5011@gmail.com" target="_blank">
+      <i class="fas fa-envelope-square color-icon larger-icon"></i>
+    </a>
+    <a href="tel:+66957355011" target="_blank">
+      <i class="fas fa-phone-square-alt color-icon larger-icon"></i>
+    </a>
+  </footer>
+  <script src="/Lab04_347_javacript/portfolio.js"></script>
+</body>
+</html>
