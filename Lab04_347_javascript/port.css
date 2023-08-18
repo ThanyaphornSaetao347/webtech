@@ -1,0 +1,79 @@
+.header-box{
+    /* background-color: #a8abc4; */
+    color: white;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #4c5372 50%, #fffdf6 50%);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+  
+.content {
+    display: flex;
+    margin: 20px;
+}
+  
+.image {
+    border-radius: 30%;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-right: 20px;
+    flex: 0 0 auto;
+}
+  
+.text {
+    flex: 1 1 auto;
+}
+  
+.text p {
+    text-align: left;
+    color: #fffdf6;
+}
+.footer-box {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 10px;
+
+}
+.footer-box a {
+    text-decoration: none;
+    color: white;
+}
+  
+.footer-box a:hover {
+    opacity: 0.8;
+}
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+      
+.social-icons i {
+    font-size: 30px;
+    margin: 0 5px;
+}
+.color-icon{
+    color: #4c5372;
+}
+.larger-icon {
+    font-size: 36px; /* ปรับขนาดของไอคอนให้ใหญ่ขึ้น (สามารถปรับค่าตามต้องการ) */
+    margin: 0 5px;
+}
+.graph{
+    justify-content: center;
+    align-items: center;
+}
